@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules
+.idea*
+dist/
+/.git/
+package-lock.json
+doc/test.vue
+doc/test1.vue
