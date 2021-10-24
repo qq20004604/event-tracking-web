@@ -298,16 +298,23 @@ if (isProd) {
         ],
         runtimeChunk: {name: 'runtime'}, // 为每个入口提取出webpack runtime模块
     };
-    config.externals = [
-        {
-            'vue': 'Vue',
-            'vue-router': 'VueRouter',
-            'vuex': 'Vuex',
-            'element-ui': 'ELEMENT',
-            'echarts': 'echarts',
-        },
-        'element-ui/lib/theme-chalk/index.css'
-    ];
+    // config.externals = [
+    //     {
+    //         'vue': 'Vue',
+    //         'vue-router': 'VueRouter',
+    //         'vuex': 'Vuex',
+    //         'element-ui': 'ELEMENT',
+    //         'echarts': 'echarts',
+    //     },
+    //     'element-ui/lib/theme-chalk/index.css'
+    // ];
+    config.externals = {
+        'vue': 'Vue',
+        'vue-router': 'VueRouter',
+        'vuex': 'Vuex',
+        'element-ui': 'ELEMENT',
+        'echarts': 'echarts',
+    };
 } else {
     config.plugins = [
         new webpack.HotModuleReplacementPlugin(),
