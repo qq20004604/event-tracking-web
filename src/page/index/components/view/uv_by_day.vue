@@ -4,6 +4,7 @@
             选择日期：
             <el-date-picker
                 v-model="date"
+                value-format="yyyy-MM-dd"
                 type="date"
                 placeholder="选择日期"/>
 

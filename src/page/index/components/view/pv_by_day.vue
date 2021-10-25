@@ -5,6 +5,7 @@
             <el-date-picker
                 v-model="date"
                 type="date"
+                value-format="yyyy-MM-dd"
                 placeholder="选择日期"/>
 
             <el-button @click="submit" type="primary">查看</el-button>
