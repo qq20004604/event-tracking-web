@@ -219,7 +219,7 @@ const config = {
             filename: resolve('dist/index.html'),
             template: resolve(
                 `index_${isProd ? 'prd' : 'dev'}.html`),
-            title: '西部信托',
+            title: '标题',
             minify: { // 对index.html压缩
                 collapseWhitespace: isProd, // 去掉index.html的空格
                 removeAttributeQuotes: isProd, // 去掉引号
